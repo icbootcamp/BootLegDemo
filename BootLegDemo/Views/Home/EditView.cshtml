@@ -1,0 +1,13 @@
+﻿@model BootLegDemo.Models.SupplierEntryModel
+@{
+    ViewBag.Title = "EditView";
+    Layout = null;
+}
+
+<h2>EditView</h2>
+
+@Html.TextBoxFor( m => m.Id)
+@Html.TextBoxFor(m => m.CompanyName)
+@Html.TextBoxFor(m => m.FirstName)
+@Html.DropDownListFor(m => m.SupplierTypeId, Model.SupplierType)
+    

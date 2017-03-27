@@ -1,0 +1,25 @@
+﻿@model List<BootLegDemo.Models.SupplierListModel>
+@{
+    ViewBag.Title = "GetModelList";
+    Layout = null;
+}
+
+<h2>GetModelList</h2>
+
+<table >
+    <tr>
+        <th>Id</th>
+        <th>Company Name</th>
+        <th>First Name</th>
+        <th>&nbsp</th>
+    </tr>
+    @foreach( var l in Model)
+    {
+        <tr>
+            <td>@l.Id</td>
+            <td>@l.CompanyName</td>
+            <td>@l.FirstName</td>
+            <td><button class="edit">Edit</button></td>
+        </tr>
+    }
+</table>
